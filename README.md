@@ -1,6 +1,7 @@
 # socket-programming
 
-# The UDP client:
+#### The UDP client:
+------
 The client sends an Operation Code (OC), and two numbers.
 OC can be: Addition, Subtraction, Multiplication , and Division.
 To make the problem simple, your client sends two integer numbers.
@@ -28,7 +29,8 @@ c. Otherwise go to step 2
 7. Go to step 1.
 
 
-#The UDP Server:
+#### The UDP Server:
+------
 The server performs the operation (OC) requested on the two numbers it receives from the
 sender and returns the result. More specifically the server must
 1. Open a socket as a server and
@@ -40,7 +42,7 @@ sender and returns the result. More specifically the server must
 7. If the request is not valid, it sends a return status code of 300 and the result of -1 (to be
 consistent) and goes to Step 2
 Invalid requests are:
-• Invalid OC 
+• Invalid OC
 • Invalid operands
 o Operands not integers
 o Division by zero (0).
